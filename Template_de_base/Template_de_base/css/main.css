@@ -1,7 +1,57 @@
 HTML CSSResult Skip Results Iframe
 EDIT ON
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+footer,header {
+  background-color: pink;
+  color: white;
+}
+body{
+  font-family:verdana;
+}
+.lien,.nav-link:Visited{
+  color:black;
+}
+.lien,.nav-link:hover {
+  color:blue; 
+}
 
+.lien,.nav-link:active {
+  color: blueviolet;
+}
+h2,h4{
+  font-size: 16px;
+  font-family: verdana;
+  font-style: italic;
+  text-decoration: underline;
+}
+#bac, #licence,#ing,#stage1,#stage2,#stage3{
+  text-decoration: underline;
+  font-style: italic;
+}
+h3{
+  font-size: 12px;
+  font-family: verdana;
+  font-style: italic;
+
+ 
+}
+
+p,li{
+  font-style: italic;
+  font-family:arial;
+}
+#imag1{
+  margin-right:2px;
+}
+#imag2{
+  margin-right:0px;
+}
+#imag3{
+  margin-right:50px;
+}
+#imag4{
+  margin-left:5px;
+}
 body  {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
   background-size:cover;
