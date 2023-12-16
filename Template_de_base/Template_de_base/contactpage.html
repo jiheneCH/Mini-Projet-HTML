@@ -11,17 +11,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <title>Parcours</title>
+    <title>Contact</title>
    
 </head>
 
 
 
 
-
-<body>
+<body align="center" >
    
-    
   <header>
     <div  id="top" class="navigation"> 
       <div class="navigation__wrapper wrapper--large"> 
@@ -52,37 +50,84 @@
     </ul>
     
     </nav></div></div><br> <br><br></header>
+    <section id="contact" class="contact">
+        <h2 id="Inscription" class="contact__heading title">Inscription</h2>
+       
+            <form  align="center" id="form">
+                <table align="center" 
+              
+                   <tr>
+               <th> <label for="name">Nom : *  </label></th>
+                <th><input type="text" id="name" name="name" requiered  ><br></th>
+                <th> <span id="nomError"></span><br></th>
+                </tr>
 
-    <section id="work" class="work" >
-        <h4 class="work__heading title">Mon parcours académique</h4>
-       
-        <ul align=center> 
-          <img src="C:/Users/Lenovo/Downloads/Template_de_base/Template_de_base/img/mortarboard.svg" width="5%">
-            <li id="bac"> <strong> Baccalauréat : Mathématique (2020) </strong></li>
-                <li>Lycée Med Dachraoui menzah 9</li><br>
-                
-                <img src="C:/Users/Lenovo/Downloads/Template_de_base/Template_de_base/img/logo-ISTMT-1-1-e1681383136270-q4y7ib74cvrh0t17j51kki9xg0svddr8mx3gz34hug.png" width="6%">
-                <li id="licence"> <strong > Diplôme : Licence Nationale en Génie Biomédicale :  Parcours Informatique Médicale 2020-2023 </strong></li>
-                <li>Institut supérieur des technologies médicale de Tunis</li><br>
-                <img src="C:/Users/Lenovo/Downloads/Template_de_base/Template_de_base/img/Logo_ESPRIT_Ariana.jpg" width="6%">
-                <li id="ing"><strong > Cycle d'ingénieur en informatque 2023-2026</strong></li>
-                <li>ESPRIT</li>
-               
-           
-        </ul>
-       
-     
-    </section>
+            <tr><th><label for="lname"> Prénom :  </label></th>
+        <th><input type="text" id="lname" name="lname" requiered   ><br></th>
+        <th><span id="prenomError"></span></th>
+    </tr>
+    
+    <tr>
+    <th><label for="comment" > Adresse : </label></th>
+<th><textarea name="comment" id="comment" > </textarea></th>
+</tr>
+
+<tr>
+<th><label for="num">Numéro de téléphone :  *  </label></th>
+<th><input type="text" id="num" name="num"  requiered><br></th>
+<th> <span id="telephoneError"></span></th>
+</tr>
+
+<tr>
+<th><label for="DB">Date de naissance :    </label></th>
+<th><input type="date" id="DB" name="DB"   value="date de naissance" ><br></th>
+</tr>
+
+<tr>
+<th><label for="email"> Email *  </label></th>
+<th><input id="email" type="email" pattern =".+@gmail.com" required placeholder="contact@exemple.com" name="email"  title="echec" sizee="20" value="Email"><br></th>
+</tr>
+
+<tr>
+<th><label for="pass" > Mot de passe : * </label></th></th>
+<th><input type="password" id="pass" name="pass"  required ></th>
+<th> <span id="passwordError"></span><br></th></tr>
+<tr>
+
+<tr>
+    <th><label for="passw" >Confirmation mot de passe : * </label></th></th>
+    <th><input type="password" id="passw"  name="passw" required  ></th>
+   <th>  <span id="confirmPasswordError"></span><br></th>
+</tr>
+<tr> 
+    <th>   <div id="error-message" style="display: none; color: red;">Veuillez remplir tous les champs requis.</div></th>
+</tr>
+    <tr> 
+<th>
+    <input id="submit" type="submit" value="submit" >
+</th>
+<th>    <input id="btn2" type="reset" value="Reset"></th>
+
+
+</tr>
+
+</form>
+</table>
+</section>
+
     
 
-    <footer class="footer">
-      <div class="footer__wrapper wrapper--large">
-        <p class="footer__copyright no-margin">&copy; 2023 Chaalali Jihene</p>
-        <a class="footer__logo logo" href="#0">JC</a>
-       
-      </div>
-    </footer>
+
+
+<footer class="footer">
+  <div class="footer__wrapper wrapper--large">
+    <p class="footer__copyright no-margin">&copy; 2023 Chaalali Jihene</p>
+    <a class="footer__logo logo" href="#0">JC</a>
+    
+  </div>
+</footer>
+<script src="index.js"></script>
+
 </body>
 
-      
 </html>
